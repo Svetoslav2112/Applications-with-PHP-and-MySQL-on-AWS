@@ -1,9 +1,3 @@
-var lockFunction = window.screen.orientation.lock;
-if (lockFunction.call(window.screen.orientation, 'landscape')) {
-  console.log('Orientation locked')
-} else {
-  console.error('There was a problem in locking the orientation')
-}
 var collapsible = document.getElementsByClassName("collapsible");
 
 for (var i = 0; i < collapsible.length; i++) {
