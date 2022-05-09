@@ -1,0 +1,101 @@
+nav {
+  position: fixed;
+  top: 30%;
+  transition-property: top;
+  transition-duration: 0.8s;
+  display: inline-block;
+  margin-left: 1%;
+  width: 26.5%;
+  height: fit-content;
+  max-height: 75%;
+  overflow-y: auto;
+  background-image: linear-gradient(rgb(213, 238, 233), rgb(236, 203, 203));
+  border-style: solid;
+  border-width: 1pt;
+  border-radius: 5px;
+  border-color: rgb(68, 66, 66);
+}
+
+#navigation-list {
+  list-style-type: none;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 0;
+}
+
+.active,
+.collapsible:hover {
+  background-color: rgb(202, 210, 239);
+}
+
+.collapsible:after {
+  content: '\002B';
+  float: right;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-right: 2%;
+}
+
+.active:after {
+  content: "\2212";
+  float: right;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-right: 2%;
+}
+
+#steps-for-setup {
+  margin-top: 0;
+  margin-left: 30px;
+  margin-right: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+}
+
+#navigation-list li {
+  margin: 1px;
+  padding: 0;
+}
+
+#navigation-list a {
+  display: block;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 11pt;
+  font-family: 'Andada Pro', serif;
+  text-align: start;
+}
+
+#navigation-list a {
+  color: rgb(82, 40, 133);
+}
+
+#navigation-list a:hover {
+  color: rgb(53, 25, 87);
+  background-color: rgb(202, 210, 239);
+}
+
+#navigation-list a:active {
+  color: rgb(115, 13, 66);
+  background-color: transparent;
+}
+
+#navigation-list a:visited {
+  color: rgb(82, 40, 133);
+  background-color: rgb(202, 210, 239);
+}
+
+#navigation-list a:visited:hover {
+  color: rgb(53, 25, 87);
+  background-color: rgb(202, 210, 239);
+}
+
+#navigation-list a:visited:active {
+  color: rgb(115, 13, 66);
+  background-color: transparent;
+}
