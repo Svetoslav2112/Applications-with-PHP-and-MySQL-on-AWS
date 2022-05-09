@@ -1,6 +1,3 @@
-window.screen.orientation = 'landscape-primary';
-screen.orientation.lock('landscape');
-
 var collapsible = document.getElementsByClassName("collapsible");
 
 for (var i = 0; i < collapsible.length; i++) {
